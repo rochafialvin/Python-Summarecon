@@ -35,29 +35,38 @@ numThree = "7"
 # print(hasil)
 numOne = 10
 numTwo = 5
-result = numOne + numTwo
+result = numOne + numTwo # 15
 
+# numOne = 10 , numOneString = "10"
 numOneString = str(numOne)
+# numTwo = 5  , numTwoString = "5"
 numTwoString = str(numTwo)
+# result = 15 , resultString = "15"
 resultString = str(result)
 
+# 10 + 5 = 15
 result = numOne + numTwo
-print(numOneString + " + " + numTwoString + " = " + resultString)
+print(numOneString + " + " + numTwoString + " = " + str(result))
 
+# 10 - 5 = 5
 result = numOne - numTwo
-print(numOneString + " - " + numTwoString + " = " + resultString)
+print(numOneString + " - " + numTwoString + " = " + str(result))
 
+# 10 * 5 = 50
 result = numOne * numTwo
-print(numOneString + " * " + numTwoString + " = " + resultString)
+print(numOneString + " * " + numTwoString + " = " + str(result))
 
+# 10 / 5 = 2
 result = numOne / numTwo
-print(numOneString + " / " + numTwoString + " = " + resultString)
+print(numOneString + " / " + numTwoString + " = " + str(result))
 
+# 10 % 5 = 0
 result = numOne % numTwo
-print(numOneString + " % " + numTwoString + " = " + resultString)
+print(numOneString + " % " + numTwoString + " = " + str(result))
 
+# 10 ** 5 = 100000
 result = numOne ** numTwo
-print(numOneString + " ** " + numTwoString + " = " + resultString)
+print(numOneString + " ** " + numTwoString + " = " + str(result))
 
 
 

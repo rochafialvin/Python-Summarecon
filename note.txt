@@ -1,10 +1,8 @@
-Membuat apps Market
++ 5
 
-1. Akan meminta quantity untuk 3 buah, yaitu Apel, Jeruk, Anggur
-
-2. Harga satuan :
-    Apel : 10000
-    Jeruk : 15000
-    Anggur : 20000
-
-3. Tampilkan di alert total biaya per buah dan total biaya seluruhnya
+1. Ryan
+2. Reza
+3. Reyhan
+4. Erwan
+5. Bagja
+6. Hilman
