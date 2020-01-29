@@ -137,11 +137,22 @@ x = 'halo Dunia ku yang cerah'
 # print("You are \"crazy\" ")
 
 # \n untuk membuat baris baru, enter, new line
-print("Hello, i'am ironman" + "\n" +"and i'am \"crazy\"")
-print(
-    "Hello, i'am ironman" + "\n" + 
-    "and i'am \"crazy\""
-)
+# print("Hello, i'am ironman" + "\n" +"and i'am \"crazy\"")
+# print(
+#     "Hello, i'am ironman" + "\n" + 
+#     "and i'am \"crazy\""
+# )
+
+
+# textInput = input('Masukkan sebuah kata : ')
+# charInput = input('Karakter apa yang ingin diketahui jumlahnya : ')
+
+# replacedText = textInput.replace(charInput, '')
+# margin = len(textInput) - len(replacedText)
+
+# print('Pada kata ' + textInput + ' terdapat ' + str(margin) + ' huruf ' + charInput)
+
+
 
 
 # Duplicate code : SHIFT + ALT + DOWN ARROW
