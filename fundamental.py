@@ -82,7 +82,7 @@ ageKobe -= 1
 # print(ageKobe)
 
 # module math
-import math
+# import math
 
 # Mengabsolute sebuah nilai
 # print(abs(-13))
@@ -120,7 +120,7 @@ import math
 # print(x.split())
 # print(x.split(" "))
 
-x = 'halo Dunia ku yang cerah'
+# x = 'halo Dunia ku yang cerah'
 
 # Mengubah menjadi huruf kecil
 # print(x.lower())
@@ -151,6 +151,95 @@ x = 'halo Dunia ku yang cerah'
 # margin = len(textInput) - len(replacedText)
 
 # print('Pada kata ' + textInput + ' terdapat ' + str(margin) + ' huruf ' + charInput)
+
+#  Hujan
+
+# if hujan :
+#     pakai payung
+# else :
+#     tidak pakai payung
+
+
+# Umur
+
+# if lebih dari 18:
+#     boleh masuk
+# elif 15 - 17 :
+#     boleh masuk, tp dengan orang tua
+# else :
+#     tidak boleh masuk
+
+
+# Tipe Data : Boolean (TRUE, FALSE)
+# 23 = 34
+
+# == sama dengan
+# > lebih besar
+# < lebih kecil
+# <= lebih kecil sama dengan
+# >= lebih besar sama dengan
+
+# print(4 > 5) # False
+# print(7 > 5) # True
+# print(8 > 8) # False
+# print(8 >= 8) # True
+
+# satu = "1"
+# one = "1"
+
+# Tipe data harus sama
+# "1" == 1  -- > False
+# 1 == 1 -- > True
+# "1" == "1" -- > True
+# print(satu == one)
+
+# AND OR NOT
+
+# and
+# Jika kedua nilai bernilai TRUE akan menghasilkan TRUE
+
+# or
+# Jika kedua nilai bernilai FALSE akan menghasilkan FALSE
+
+# not
+# not TRUE = FALSE
+# not FALSE = TRUE
+
+payday = False
+
+if payday :
+    print('Ayo kita belanja')
+
+else :
+    print('Mari berdiam dirumah')
+
+
+age = 16.5
+
+if age >= 18: # 18 +
+    print('Silahkan masuk')
+
+elif (age >= 15) and (age <= 17): # 15 - 17
+    print('Masuk dengan orang tua')
+
+else: # lainnya (14 tahun ke bawah)
+    print('Tidak Boleh masuk')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

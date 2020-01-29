@@ -10,8 +10,11 @@ speedB = 40
 speedTotal = speedA + speedB
 distance = 120
 
+# Waktu tabrakan dalam hitungan jam
 timeCrash = distance / speedTotal
+# Cari tahu berapa jam
 timeInHour = int(timeCrash)
+# Cari tahu berapa menit
 timeInMinute = int((timeCrash * 60) % 60)
 
 print(
