@@ -42,3 +42,14 @@ print(
     f'Jeruk : {qtyOrange} x {priceOrange} = {totalOrange}\n\n' +
     f'Total : {totalPrice}'
 )
+
+
+Upgrade :
+    1. Jika user memasukkan qty lebih dari stock :
+        minta user untuk input ulang, sampai tidak melebihi stock
+
+    2. Minta user input sejumlah uang:
+        Jika uangnya kurang, munculkan pesan kurangnya berapa
+        kemudian minta beliau input lagi
+
+        Jika uangnya pas atau lebih, 'Terimakasih, kembalian Anda (sekian)'
