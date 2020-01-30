@@ -16,12 +16,12 @@
 #     print(f'Angka : {i}')
 
 # [0, 2, 4, 6, 8]
-for i in range(0, 9, 2):
-    print(f'G E N A P : {i}')
+# for i in range(0, 9, 2):
+#     print(f'G E N A P : {i}')
 
 # [1, 3, 5, 7, 9]
-for i in range(1, 10, 2):
-    print(f'G A N J I L : {i}')
+# for i in range(1, 10, 2):
+#     print(f'G A N J I L : {i}')
 
 # [0, 1, 2, 3, 4]
 # range(0, 5)
@@ -32,4 +32,74 @@ for i in range(1, 10, 2):
 
 # [1, 3, 5, 7, 9]
 # range(1, 11, 2)
+
+# DRAWING
+
+# Horizontal Stars
+# * * * * * 
+# stars = ''
+
+# for val in range(5):
+#     stars += ' * '
+
+# print(stars)
+
+# Vertical Stars
+# *
+# *
+# *
+# *
+# *
+
+# stars = ''
+
+# for i in range(5):
+#     stars += ' * '
+#     stars += '\n'
+
+# print(stars)
+
+
+
+# Square Stars
+#  *  *  *  *  * \n *  *  *  *  * \n *  *  *  *  * \n *  *  *  *  * \n *  *  *  *  *
+
+# stars = ''
+# row = 7
+
+# # Menentukan banyaknya baris
+# for i in range(row):
+#     # Menentukan banyak bintang per baris
+#     for j in range(row):
+#         stars += ' * '
+    
+#     stars +='\n'
+
+# print(stars)
+
+
+# Triangle Stars (increment)
+#  * 
+#  *  * 
+#  *  *  * 
+#  *  *  *  * 
+#  *  *  *  *  * 
+
+stars = ''
+row = 5
+
+# Banyaknya baris
+for i in range(row):
+    # Banyaknya bintang per baris
+    for j in range(i + 1):
+        stars += ' * '
+
+    stars += '\n'
+
+print(stars)
+
+
+
+
+
 
