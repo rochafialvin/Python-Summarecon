@@ -110,20 +110,20 @@
 # print(list(range(5, 4, -1)))
 
 
-stars = ''
-row = 5
+# stars = ''
+# row = 5
 
-# Banyaknya baris
-# [0, 1, 2, 3, 4]
-for i in range(5):
-    # Banyaknya bintang per baris
-    # [5]
-    for j in range(5, i, -1):
-        stars += ' * '
+# # Banyaknya baris
+# # [0, 1, 2, 3, 4]
+# for i in range(5):
+#     # Banyaknya bintang per baris
+#     # [5]
+#     for j in range(5, i, -1):
+#         stars += ' * '
 
-    stars += '\n'
+#     stars += '\n'
 
-print(stars)
+# print(stars)
 
 # i = 0 -> 1 -> 2 -> 3 -> 4
 # j = 5 -> 4 -> 3 -> 2
@@ -136,7 +136,27 @@ print(stars)
 #  * \n
 
 
+stars = ''
+row = 5
 
+# Banyaknya baris
+for i in range(row):
+
+    # Banyaknya bintang per baris
+    for j in range(5, i, -1):
+        stars += ' * '
+
+    stars += '\n'
+
+# Banyaknya baris
+for i in range(1, row, 1):
+    # Banyaknya bintang per baris
+    for j in range(i + 1):
+        stars += ' * '
+
+    stars += '\n'
+
+print(stars)
 
 
 
