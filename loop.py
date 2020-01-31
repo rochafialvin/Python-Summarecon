@@ -85,18 +85,71 @@
 #  *  *  *  * 
 #  *  *  *  *  * 
 
+# stars = ''
+# row = 5
+
+# # Banyaknya baris
+# for i in range(row):
+#     # Banyaknya bintang per baris
+#     for j in range(i + 1):
+#         stars += ' * '
+
+#     stars += '\n'
+
+# print(stars)
+
+# # [5, 4, 3, 2, 1]
+# print(list(range(5, 0, -1)))
+# # [5, 4, 3, 2]
+# print(list(range(5, 1, -1)))
+# # [5, 4, 3]
+# print(list(range(5, 2, -1)))
+# # [5, 4]
+# print(list(range(5, 3, -1)))
+# # [5]
+# print(list(range(5, 4, -1)))
+
+
 stars = ''
 row = 5
 
 # Banyaknya baris
-for i in range(row):
+# [0, 1, 2, 3, 4]
+for i in range(5):
     # Banyaknya bintang per baris
-    for j in range(i + 1):
+    # [5]
+    for j in range(5, i, -1):
         stars += ' * '
 
     stars += '\n'
 
 print(stars)
+
+# i = 0 -> 1 -> 2 -> 3 -> 4
+# j = 5 -> 4 -> 3 -> 2
+
+# stars
+#  *  *  *  *  * \n
+#  *  *  *  * \n
+#  *  *  * \n
+#  *  * \n
+#  * \n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
