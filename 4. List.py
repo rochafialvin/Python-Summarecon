@@ -125,22 +125,84 @@
 
 # Ambil 3 gaji terendah dan 3 gaji tertinggi
 
-listSalary =[
-    7500000,
-    9000000,
-    300000,
-    200000,
-    1700000
-]
+# listSalary =[
+#     7500000,
+#     9000000,
+#     300000,
+#     200000,
+#     1700000
+# ]
 
-# Terendah
-listSalary.sort()
-print(
-    listSalary[0:3]
-)
+# # Terendah
+# listSalary.sort()
+# print(
+#     listSalary[0:3]
+# )
 
-# Tertinggi
-listSalary.sort(reverse=True)
-print(
-    listSalary[0:3]
-)
+# # Tertinggi
+# listSalary.sort(reverse=True)
+# print(
+#     listSalary[0:3]
+# )
+
+# x = [40, 100, 1, 5, 25, 10]
+# y = [ 5, 25, 10]
+
+# def minMax(listNum):
+#     startList = listNum
+    
+#     # rendah - tinggi
+#     # [1, 5, 10, 25, 40, 100]
+#     listNum.sort()
+    
+#     #Nilai Awal 
+#     print(startList)
+
+#     # Nilai Terendah
+#     print(listNum[0])
+
+#     # Nilai Tertinggi
+#     print(listNum[-1])
+
+# minMax(x)
+# minMax(y)
+
+
+# x = [40, 100, 1, 5, 25, 10]
+# y = [ 5, 25, 10]
+
+# def maxMin(listNum):
+#     startList = listNum
+    
+#     # [1, 5, 10, 25, 40, 100]
+#     listNum.sort()
+
+#     min = listNum[0]
+#     max = listNum[-1]
+    
+
+#     return [startList, min, max]
+
+# tmp = maxMin(y)
+# print(tmp)
+
+# Min max
+# x = [40, 100, 1, 5, 25, 10]
+# y = [ 5, 25, 10]
+
+# def minMax(x):
+#     min = max = x[0]
+
+#     for i in range(len(x)):
+#         if x[i] < min :
+#             min = x[i]
+#         if x[i] > max :
+#             max = x[i]
+
+#     return [x, min, max]
+
+
+# tmp = minMax(x)
+# print(f'List : {tmp[0]}')
+# print(f'Min : {tmp[1]}')
+# print(f'Max : {tmp[2]}')
