@@ -51,11 +51,37 @@ def even(num):
 
 numList = [11, 12, 13 ,14 , 15, 16, 17, 18, 19, 20]
 
-evenList = list(filter(even, numList))
+evenList = list(myFilter(even, numList))
 
 print(evenList)
 
-# With Lambda
-evenList = list(filter(lambda x: x % 2 == 0, numList))
+# # With Lambda
+# evenList = list(filter(lambda x: x % 2 == 0, numList))
 
-print(evenList)
+# print(evenList)
+
+
+# SEARCH 
+
+# word = ['Sands', 'Peace', 'Sandals', 'Birds', 'Dear']
+
+numList = [1, 2, 3, 4, 5]
+resInt = 2 in numList # True
+resInt = 6 in numList # False
+
+numString = 'You can jump'
+resStr = 'You' in numString # True
+resStr = 'you' in numString # False
+
+print(resStr)
+
+
+# HOMEWORK
+# Buat duplicate function untuk map dan filter
+
+def myMap(fun, lis):
+    # do something
+
+def myFilter(fun, lis):
+    # do something
+
