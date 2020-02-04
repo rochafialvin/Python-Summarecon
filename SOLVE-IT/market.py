@@ -1,10 +1,6 @@
-stockApple = 5
-stockGrape = 7
-stockOrange = 8
-
-priceApple = 10000
-priceGrape = 15000
-priceOrange = 20000
+fruits = ['Apel', 'Anggur', 'Jeruk']
+stock = [5, 7, 8]
+price = [1000, 15000, 20000]
 
 askAgain = True
 while askAgain:
@@ -73,11 +69,10 @@ while moneyAgain:
 
 
 # Upgrade :
-#     1. Jika user memasukkan qty lebih dari stock :
-#         minta user untuk input ulang, sampai tidak melebihi stock
-
-#     2. Minta user input sejumlah uang:
-#         Jika uangnya kurang, munculkan pesan kurangnya berapa
-#         kemudian minta beliau input lagi
-
-#         Jika uangnya pas atau lebih, 'Terimakasih, kembalian Anda (sekian)'
+#      Memiliki menu utama :
+#       1. Melihat list buah (name | stock | price)
+#       2. Menambahkan list buah
+#       3. Belanja buah
+#
+#     - Hanya boleh ada satu while dalam input qty semua buah
+#     - Setiap selesai menambahkan buah, tampilkan list buah terbaru
