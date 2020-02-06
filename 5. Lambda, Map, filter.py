@@ -23,9 +23,9 @@
 
 # numList = [1, 2, 3 ,4 , 5]
 
-# mapObj = map(times2, numList)
-# result = list(mapObj)
+# result = list(map(times2, numList))
 
+# print(numList)
 # print(result)
 
 # with lambda
@@ -45,15 +45,16 @@
 # return filterobject, untuk mendapatkan listnya harus
 # di masukkan ke dalam function list()
 
+
 # with function
-def even(num):
-    return num % 2 == 0
+# def even(num):
+#     return num % 2 == 0
 
-numList = [11, 12, 13 ,14 , 15, 16, 17, 18, 19, 20]
+# numList = [11, 12, 13 ,14 , 15, 16, 17, 18, 19, 20]
 
-evenList = list(myFilter(even, numList))
+# evenList = list(filter(even, numList))
 
-print(evenList)
+# print(evenList)
 
 # # With Lambda
 # evenList = list(filter(lambda x: x % 2 == 0, numList))
@@ -65,23 +66,100 @@ print(evenList)
 
 # word = ['Sands', 'Peace', 'Sandals', 'Birds', 'Dear']
 
-numList = [1, 2, 3, 4, 5]
-resInt = 2 in numList # True
-resInt = 6 in numList # False
+# numList = [1, 2, 3, 4, 5]
+# resInt = 2 in numList # True
+# resInt = 6 in numList # False
 
-numString = 'You can jump'
-resStr = 'You' in numString # True
-resStr = 'you' in numString # False
+# numString = 'You can jump'
+# resStr = 'You' in numString # True
+# resStr = 'you' in numString # False
 
-print(resStr)
+# print(resStr)
 
 
 # HOMEWORK
 # Buat duplicate function untuk map dan filter
 
+
+# numList = [2, 3 ,4 ]
+
+# def times2(num):
+#     return num * 2
+Map' menerima dua argumen : function, list
 def myMap(fun, lis):
-    # do something
+    # List kosong untuk menyimpan hasil map
+    mapList = []
+    # Loop sebanyak data di list
+    for i in lis:
+        # Hasil return function disimpan di res
+        res = fun(i)
+        # res di input ke list
+        mapList.append(res)
+    
+    # myMap akan mengeluarkan list baru 'mapList'
+    return mapList
 
-def myFilter(fun, lis):
-    # do something
+    
+# myMapRes = myMap(times2, numList)
+# print(numList)
+# print(myMapRes)
 
+# numList = [11, 12, 13 ,14 , 15, 16, 17, 18]
+
+# def even(num):
+#     return num % 2 == 0
+
+# # 'myFilter' menerima dua argumen : function, list
+# def myFilter(fun, lis):
+#     # List kosong untuk menyimpan hasil filter
+#     filterList = []
+#     # Loop sebanyak data di list
+#     for i in lis:
+#         # Setiap loop akan return True / False, disimpan di 'res'
+#         res = fun(i)
+#         # jika 'res' berisi True, maka nilai 'i' akan dimasukkan ke 'filterList'
+#         if res == True:
+#             filterList.append(i)
+#     # list yang berisi hasil filter, dikeluarkan dari 'myFilter'
+#     return filterList
+
+# myFilterRes = myFilter(even, numList)
+# print(numList)
+# print(myFilterRes)
+
+
+words = ['Merdeka', 'Hello', 'Andi', 'Sohib', 'Kari ayam']
+final = []
+
+keyword = input(f'{words}\nSearch : ')
+
+for i in words:
+    # keyword   = 'a' 
+    # i         = 'Merdeka'
+
+    # input dari user dan kata pada list akan dirubah menjadi huruf kecil
+    # res : True / False
+    res = keyword.lower() in i.lower()
+    #  Jika True, akan masukkan 'i' ke dalam list
+    if res == True:
+        final.append(i)
+
+print(final)
+
+
+# for in
+# if else
+# len()
+# join
+# print()
+employee = [
+    {"name": 'Steve', "gender" : 'male', "hobbies" : ['Video games', 'Football']},
+    {"name": 'Lina', "gender" : 'female', "hobbies" : ['Shop', 'Cook']},
+    {"name": 'Reynald', "gender" : 'male', "hobbies" : ['Run', 'Hide', 'Jump']}
+]
+
+# Mr. Steve has 2 hobbies, they are Video games, Football
+
+# Mrs. Lina has 2 hobbies, they are Shop, Cook
+
+# Mr. Reynald has 3 hobbies, they are Run, Hide, Jump
