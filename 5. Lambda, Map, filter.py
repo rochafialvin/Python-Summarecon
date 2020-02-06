@@ -85,19 +85,19 @@
 
 # def times2(num):
 #     return num * 2
-Map' menerima dua argumen : function, list
-def myMap(fun, lis):
-    # List kosong untuk menyimpan hasil map
-    mapList = []
-    # Loop sebanyak data di list
-    for i in lis:
-        # Hasil return function disimpan di res
-        res = fun(i)
-        # res di input ke list
-        mapList.append(res)
+# Map' menerima dua argumen : function, list
+# def myMap(fun, lis):
+#     # List kosong untuk menyimpan hasil map
+#     mapList = []
+#     # Loop sebanyak data di list
+#     for i in lis:
+#         # Hasil return function disimpan di res
+#         res = fun(i)
+#         # res di input ke list
+#         mapList.append(res)
     
-    # myMap akan mengeluarkan list baru 'mapList'
-    return mapList
+#     # myMap akan mengeluarkan list baru 'mapList'
+#     return mapList
 
     
 # myMapRes = myMap(times2, numList)
@@ -128,23 +128,23 @@ def myMap(fun, lis):
 # print(myFilterRes)
 
 
-words = ['Merdeka', 'Hello', 'Andi', 'Sohib', 'Kari ayam']
-final = []
+# words = ['Merdeka', 'Hello', 'Andi', 'Sohib', 'Kari ayam']
+# final = []
 
-keyword = input(f'{words}\nSearch : ')
+# keyword = input(f'{words}\nSearch : ')
 
-for i in words:
-    # keyword   = 'a' 
-    # i         = 'Merdeka'
+# for i in words:
+#     # keyword   = 'a' 
+#     # i         = 'Merdeka'
 
-    # input dari user dan kata pada list akan dirubah menjadi huruf kecil
-    # res : True / False
-    res = keyword.lower() in i.lower()
-    #  Jika True, akan masukkan 'i' ke dalam list
-    if res == True:
-        final.append(i)
+#     # input dari user dan kata pada list akan dirubah menjadi huruf kecil
+#     # res : True / False
+#     res = keyword.lower() in i.lower()
+#     #  Jika True, akan masukkan 'i' ke dalam list
+#     if res == True:
+#         final.append(i)
 
-print(final)
+# print(final)
 
 
 # for in
@@ -158,8 +158,24 @@ employee = [
     {"name": 'Reynald', "gender" : 'male', "hobbies" : ['Run', 'Hide', 'Jump']}
 ]
 
-# Mr. Steve has 2 hobbies, they are Video games, Football
+for i in employee:
+    # i = {"name", "gender", "hobbies"}
+    # Jika gendernya adalah laki laki, tambahkan kata Mr.
+    # Jika bukan, tambahkan kata Mrs.
+    if i["gender"] == 'male':
+        i["name"] = 'Mr.' + i["name"]
+    else :
+        i["name"] = 'Mrs.' + i["name"]
 
-# Mrs. Lina has 2 hobbies, they are Shop, Cook
+    name = i["name"]
+    # Menggabungkan semua data pada list menggunakan ", "
+    hobbies = ", ".join(i["hobbies"])
+    # Mencari tahu jumlah hobby yang dimiliki
+    lenHob = len(i["hobbies"])
 
-# Mr. Reynald has 3 hobbies, they are Run, Hide, Jump
+    print(
+        f'{name} has {lenHob} hobbies, they are {hobbies}'
+    )
+ 
+
+    

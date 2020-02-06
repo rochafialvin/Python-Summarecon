@@ -72,11 +72,11 @@ age = 32
 ageJohn = 47
 ageKobe = 41
 
-# ageJohn = ageJohn + 3
-ageJohn += 3
+ageJohn = ageJohn + 3
+# ageJohn += 3
 
 # ageKobe = ageKobe - 1
-ageKobe -= 1
+# ageKobe -= 1
 
 # print(ageJohn)
 # print(ageKobe)
