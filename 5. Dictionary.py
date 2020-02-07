@@ -12,12 +12,12 @@
 
 # price['grape'] // 15000
 
-# d = {
-#     'numInt' : 123,
-#     'numList' : [0, 1, 2],
-#     'numStr' : 'Hello',
-#     'numDict' : {'insideKey' : 100}
-# }
+d = {
+    'numInt' : 123,
+    'numList' : [0, 1, 2],
+    'numStr' : 'Hello',
+    'numDict' : {'insideKey' : 100}
+}
 
 # d['numList'] # [0, 1, 2]
 # d['numDict'] # {'insideKey' : 100}
@@ -49,7 +49,7 @@
 ##########
 
 # Untuk mendapatkan semua value dari dictionary
-# values = heroes.values()
+values = heroes.values()
 # values    {'name' : 'Bruce', 'age' :41}
 #           {'name' : 'Tony', 'age' :43}
 #           {'name' : 'Thor', 'age' :39}

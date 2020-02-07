@@ -145,10 +145,7 @@ def sentRev(word):
 # Has 99
 def has99(lis):
     idx = lis.index(9)
-    if lis[idx + 1] == 9:
-        return True
-    else:
-        return False
+    return lis[idx + 1] == 9
 
 
 print(has99([1, 9, 9]))
