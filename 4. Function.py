@@ -83,26 +83,88 @@
 # [11, 22, 34, 41, 52, 63, 71, 86,]
 # [[22, 34, 52, 86], [11, 41, 63 ,71]]
 
-startList = [11, 22, 34, 41, 52, 63, 71, 86,]
+# startList = [11, 22, 34, 41, 52, 63, 71, 86,]
 
-def oddEven(listNumber):
-    oddList = []
-    evenList = []
-    finalList = []
+# def oddEven(listNumber):
+#     oddList = []
+#     evenList = []
+#     finalList = []
 
-    for i in listNumber:
-        if i % 2 == 0:
-            # input ke array genap
-            evenList.append(i)
-        else:
-            # input ke array ganjil
-            oddList.append(i)
-    # Memasukkan list genap ke dalam list penampung (index 0)
-    finalList.append(evenList)
-    # Memasukkan list ganjil ke dalam list penampung (index 1)
-    finalList.append(oddList)
+#     for i in listNumber:
+#         if i % 2 == 0:
+#             # input ke array genap
+#             evenList.append(i)
+#         else:
+#             # input ke array ganjil
+#             oddList.append(i)
+#     # Memasukkan list genap ke dalam list penampung (index 0)
+#     finalList.append(evenList)
+#     # Memasukkan list ganjil ke dalam list penampung (index 1)
+#     finalList.append(oddList)
 
-    return finalList
+#     return finalList
 
-result = oddEven( startList )
-print(result)
+# result = oddEven( startList )
+# print(result)
+
+# if else:
+
+# Jika sebuah kata diawali dengan huruf vokal 'a i u e o', tambahkan huruf 'yay' di akhir
+# Jika tidak, taruh huruf pertama di paling belakang kemudian tambahkan 'ay'
+
+# apple --> appleyay
+# word --> ordway
+
+def changeWord(word):
+    if word[0] in 'aiueo':
+        word = word + 'yay'
+    else :
+        word = word[1:] + word[0] +'ay'
+
+    print(word)
+
+# changeWord("apple")
+# changeWord("word")
+
+
+# Reversed Sentence
+# Hello  my friend --> friend my hello
+# This is friday --> friday is This
+# split()
+# reverse() 
+# join()
+
+def sentRev(word):
+    res = word.split() # ['Hello', 'my', 'friend']
+    res.reverse() # ['friend', 'my', 'Hello']
+    res = " ".join(res) # friend my Hello
+    print(res)
+
+# sentRev('Hello my friend')
+
+# Has 99
+def has99(lis):
+    idx = lis.index(9)
+    if lis[idx + 1] == 9:
+        return True
+    else:
+        return False
+
+
+print(has99([1, 9, 9]))
+print(has99([5, 9, 2, 9]))
+print(has99([9, 3, 9]))
+print(has99([7, 9, 9, 6]))
+# [1, 9, 9] --> True
+# [5, 9, 2, 9] --> False
+# [9, 3, 9] --> False
+# [7, 9, 9, 6] --> False
+
+
+# word = "Friday"
+
+# word[2] # i
+# word[-1] # y
+# word[1:5] # rida
+# word[1:] # riday
+# word[:5] # Frida

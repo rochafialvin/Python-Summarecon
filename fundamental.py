@@ -110,7 +110,12 @@ ageJohn = ageJohn + 3
 
 # STRING
 
+word = 'Summarecon'
 
+print(word[0]) # S
+print(word[5]) # r
+print(word[2:5]) # mma
+print(word[2:]) # mmarecon
 
 # print(len(x)) # Banyak karakter pada string
 # index dimulai dari nol
@@ -205,25 +210,25 @@ ageJohn = ageJohn + 3
 # not TRUE = FALSE
 # not FALSE = TRUE
 
-payday = False
+# payday = False
 
-if payday :
-    print('Ayo kita belanja')
+# if payday :
+#     print('Ayo kita belanja')
 
-else :
-    print('Mari berdiam dirumah')
+# else :
+#     print('Mari berdiam dirumah')
 
 
-age = 16.5
+# age = 16.5
 
-if age >= 18: # 18 +
-    print('Silahkan masuk')
+# if age >= 18: # 18 +
+#     print('Silahkan masuk')
 
-elif (age >= 15) and (age <= 17): # 15 - 17
-    print('Masuk dengan orang tua')
+# elif (age >= 15) and (age <= 17): # 15 - 17
+#     print('Masuk dengan orang tua')
 
-else: # lainnya (14 tahun ke bawah)
-    print('Tidak Boleh masuk')
+# else: # lainnya (14 tahun ke bawah)
+#     print('Tidak Boleh masuk')
 
 
 

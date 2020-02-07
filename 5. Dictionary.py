@@ -4,46 +4,52 @@
 # Penulisan nama key bersifat case-sensitive
 # Nama property ditulis menggunakan kutip (seperti string)
 
-price = {
-    'apple' : 10000,
-    "grape" : 15000,
-    'orange' : 15000
-}
+# price = {
+#     'apple' : 10000,
+#     "grape" : 15000,
+#     'orange' : 15000
+# }
 
-price['grape'] // 15000
+# price['grape'] // 15000
 
-d = {
-    'numInt' : 123,
-    'numList' : [0, 1, 2],
-    'numStr' : 'Hello',
-    'numDict' : {'insideKey' : 100}
-}
+# d = {
+#     'numInt' : 123,
+#     'numList' : [0, 1, 2],
+#     'numStr' : 'Hello',
+#     'numDict' : {'insideKey' : 100}
+# }
 
-d['numList'] # [0, 1, 2]
-d['numDict'] # {'insideKey' : 100}
-d['numDict']['insideKey'] # 100
+# d['numList'] # [0, 1, 2]
+# d['numDict'] # {'insideKey' : 100}
+# d['numDict']['insideKey'] # 100
 
-heroes = {
-    'batman' : {'name' : 'Bruce', 'age' : 41}, 
-    'ironman' : {'name' : 'Tony', 'age' : 42}, 
-    'thor' : {'name' : 'Thor', 'age' : 39} 
-}
+# heroes = {
+#     'batman' : {'name' : 'Bruce', 'age' : 41}, 
+#     'ironman' : {'name' : 'Tony', 'age' : 42}, 
+#     'thor' : {'name' : 'Thor', 'age' : 39} 
+# }
 
-heroes['ironman'] # {'name' : 'Tony', 'age' : 42}
-heroes['ironman']['name'] # 'Tony
+# heroes['ironman'] # {'name' : 'Tony', 'age' : 42}
+# heroes['ironman']['name'] # 'Tony
 
-# KEYS
+########
+# KEYS #
+########
+
 # Untuk mendapatkan semua key dari dictionary
-keys = heroes.keys()
+# keys = heroes.keys()
 
-keys # dict_keys(['batman', 'ironman', 'thor'])
+# keys # dict_keys(['batman', 'ironman', 'thor'])
 
 # for i in keys:
 #     print(i)
 
-# VALUES
+##########
+# VALUES #
+##########
+
 # Untuk mendapatkan semua value dari dictionary
-values = heroes.values()
+# values = heroes.values()
 # values    {'name' : 'Bruce', 'age' :41}
 #           {'name' : 'Tony', 'age' :43}
 #           {'name' : 'Thor', 'age' :39}
@@ -54,38 +60,35 @@ values = heroes.values()
 #         'Name: ' + i['name']
 #     )
 
-# TUPLE
-# Menggunakan kurung ()
-# Mengenal indexing, dimulai dari nol
-# Nilainya tidak dapat dirubah
 
-colorTpl = ('Red', 'Green', 'Blue', 'Green', 'Blue')
+#########
+# ITEMS #
+#########
 
-colorTpl[1] # Green
-colorTpl[-1] # Blue
+hero = {
+    'Batman' : {'name' : 'Bruce', 'age' : 41},
+    'IronMan' : {'name' : 'Tony', 'age' : 42},
+    'SpiderMan' : {'name' : 'Peter', 'age' : 27}
+}
 
-# Error, tidak bisa merubah nilai tuple
-# colorTpl[0] = 'Merah'
+items = hero.items()
+# [
+#   ('Batman', {'name': 'Bruce', 'age': 41}),
+#   ('IronMan', {'name': 'Tony', 'age': 42}),
+#   ('SpiderMan', {'name': 'Peter', 'age': 27})
+# ]
 
-# Count
-# Menghitung banyak data pada tuple
-count = colorTpl.count('Green') # 2
+key = hero.keys() # 
+# [
+#   'Batman',
+#   'IronMan',
+#   'SpiderMan'
+# ]
 
-# print(f'Jumlah warna hijau : {count}')
+values = hero.values() 
+# [
+#   {'name': 'Bruce', 'age': 41},
+#   {'name': 'Tony', 'age': 42},
+#   {'name': 'Peter', 'age': 27}
+# ]
 
-# Index
-# Mencari index data tertentu
-index = colorTpl.index('Blue')
-
-# print(f'Index warna Blue : {index}')
-
-
-persons = (
-    {'name' : 'John', 'job' : 'Assasin'},
-    {'name' : 'Bruce', 'job' : 'Hunter'},
-    {'name' : 'Tony', 'job' : 'Engineer'},
-)
-
-persons[1]['name'] = 'Bruce Wyne'
-
-# print(persons[1])
