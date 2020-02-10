@@ -97,6 +97,9 @@
         <!-- TABLE -->
         <!-- tr : menentukan banyak baris -->
         <!-- td : menentukan banyak kolom -->
+        <!-- th : Memberikan efek bold dan align center -->
+        <!-- colspan : Menggabungkan kolom -->
+        <!-- rowspan : Menggabungkan baris -->
         <table>
             <tr>
                 <th colspan="3">DATA DIRI</th>
@@ -132,7 +135,26 @@
             </tr>
         </table>
 
+        <!-- FORM -->
+        <form >
+            <p>
+                Nama : <input type="text">
+            </p>
 
+            <!-- name pada input radio harus sama -->
+            <p>
+                <input type="radio" name="gender" id="pria"> Pria
+                <input type="radio" name="gender" id="wanita"> Wanita
+            </p>
+
+            <p>
+                <input type="checkbox" name="language" id="html"> HTML
+                <input type="checkbox" name="language" id="css"> CSS
+                <input type="checkbox" name="language" id="python"> PYTHON
+            </p>
+
+            <input type="button" value="FINISH">
+        </form>
 
 
 
