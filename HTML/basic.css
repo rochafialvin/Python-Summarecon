@@ -69,3 +69,20 @@ div.box-container div{
     background: url('./pictures/logo-css-150x150.png') center center fixed rebeccapurple
 }
 
+
+/* FONT */
+.font{
+    /* serif : kaki */
+    /* sans - serif : tanpa kaki */
+
+    color: black;
+    font-family: Arial, Helvetica, serif;
+    font-size: 25px;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.google-font{
+
+}
