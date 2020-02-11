@@ -1,0 +1,71 @@
+h2 {
+    color: blue
+}
+
+p {
+    color: aquamarine
+}
+
+/* ID */
+/* Untuk tag yang memiliki id : red */
+#red {
+    color: #18c026
+}
+
+/* Class */
+/* Semua tag yang memiliki class : warning  */
+.warning {
+    color: crimson
+}
+
+/* Attribute */
+[name]{
+    border: 2px solid black
+}
+
+/* Background */
+/* Untuk semua tag div yg ada didalam tag div yang memiliki class box-container */
+div.box-container div{
+    /* lebar */
+    width: 500px;
+    /* tinggi */
+    height: 300px;
+    /* tinggi baris */
+    line-height: 300px;
+    /* rata tengah */
+    text-align: center;
+    /* ukuran font */
+    font-size: 23px;
+    /* bingkai */
+    border: 1px solid black;
+
+    margin: 7px
+}
+
+#background-color {
+    background-color: teal;
+}
+
+#background-image{
+    background-image: url('./pictures/logo-css-150x150.png');
+    /* agar gambar tidak muncul lebih dari satu */
+    background-repeat: no-repeat;
+}
+
+#background-position{
+    background-image: url('./pictures/logo-css-150x150.png');
+    /* agar gambar tidak muncul lebih dari satu */
+    background-repeat: no-repeat;
+    /* background-position: bottom left ; */
+    background-position: center center ;
+}
+#background-attachment{
+    background-image: url('./pictures/logo-css-300x300.png');
+    background-attachment: fixed;
+}
+
+#background-shorthand{
+    /* image, position, attachment, color */
+    background: url('./pictures/logo-css-150x150.png') center center fixed rebeccapurple
+}
+
