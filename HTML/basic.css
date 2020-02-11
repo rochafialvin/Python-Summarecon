@@ -74,7 +74,6 @@ div.box-container div{
 .font{
     /* serif : kaki */
     /* sans - serif : tanpa kaki */
-
     color: black;
     font-family: Arial, Helvetica, serif;
     font-size: 25px;
@@ -83,6 +82,16 @@ div.box-container div{
     text-align: center;
 }
 
-.google-font{
+.google-ubuntu{
+    color: orange;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
 
+.google-coda{
+    color: blueviolet;
+    font-family: 'Coda Caption', sans-serif;
+    font-size: 25px;
+    text-align: center;
 }
