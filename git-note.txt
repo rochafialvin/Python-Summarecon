@@ -1,0 +1,42 @@
+
+git status
+    Untuk melihat status file apakah ada di modified atau sudah masuk di staging area
+git init
+    Untuk membuat sebuah folder biasa menjadi sebuah folder yang di track oleh git. (repository)
+
+git add <filename>
+    Untuk memindahkan file tertentu dari 'modified' ke 'staging' area
+
+git add .
+    Untuk memindahkan semua file dari 'modified' ke 'staging' area
+
+git rm --cached <filename>
+    Untuk mengeluarkan file yang ada di 'staging' area untuk pindah ke 'modified'
+
+git commit -m "message"
+    Untuk membuat checkpoint dengan pesan
+
+git log 
+    Untuk melihat commit apa saja yang sudah ada, dan akan diberikan info lengkapnya
+
+git log --oneline
+    Untuk melihat commit apa saja yang sudah ada, dan akan diberikan info singkat (id , message)
+
+git checkout <idcommit>
+    Untuk melihat kode pada versi commit tertentu
+
+git checkout master
+    Untuk kembali ke versi terbaru saat ini (current version)
+
+git revert <idcommit>
+    1. dont panic
+    2. shift + : (titik dua)
+    3. ketik 'wq' + enter
+
+    Menghilangkan kode untuk commit tertentu
+
+git reset <idcommit>
+    Menghapus list commit tanpa menghapus kodenya
+
+git reset <idcommit> --hard
+    Menghapus list commit dan kode. Tidak bisa di recover.
