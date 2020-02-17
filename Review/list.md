@@ -1,0 +1,9 @@
+- [ ] Function  
+- [ ] for in loop
+- [ ] while loop  
+- [ ] if else  
+- [ ] and, or, not  
+- [ ] list  
+- [ ] len()  
+- [ ] range()  
+- [ ] print(f'')  
