@@ -35,7 +35,7 @@ def summ(x, y):
     return res
     # Setelah me-return sesuatu
     # Tidak akan membaca kode berikutnya
-    print('Not running')
+    # print('Not running')
 
 # di sediakan variable penampung, karena 'summ' memiliki output
 resultSumm = summ(4, 5)

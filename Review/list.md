@@ -1,5 +1,5 @@
-- [ ] Function  
-- [ ] for in loop
+- [x] Function  
+- [x] for in loop
 - [ ] while loop  
 - [ ] if else  
 - [ ] and, or, not  
