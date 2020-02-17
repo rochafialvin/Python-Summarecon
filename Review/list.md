@@ -3,7 +3,7 @@
 - [ ] while loop  
 - [ ] if else  
 - [ ] and, or, not  
-- [ ] list  
-- [ ] len()  
-- [ ] range()  
-- [ ] print(f'')  
+- [x] list  
+- [x] len()  
+- [x] range()  
+- [x] print(f'')  
